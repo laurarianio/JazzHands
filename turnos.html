@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="CSS/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link href="CSS/estilos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script defer src="js/all.js"></script>
+    <title>Turnos</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" alt="JazzHands Nailart" width="120" height="68"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="nails.html">Uñas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="browsandlashes.html">Cejas & Pestañas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="turnos.html">Turnos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="faq.html">Preguntas frecuentes</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+
+<div class="contenedor-turnos">
+    <h1>¡Reserva tu turno!</h1>
+
+    <form action="mailto:mail@gmail.com" method="post" enctype="text/plain">
+    <div id="form1">
+        <fieldset>
+            <legend>Datos Personales</legend>
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" placeholder="Escriba sus nombres aqui" required><br><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="Apellidos" name="apellidos" placeholder="Escriba sus apellidos aqui" required><br><br>
+        
+        <label for="phone">Teléfono celular:</label>
+        <input type="tel" id="phone" name="phone" placeholder="11-2345-6789" required>
+        </fieldset>
+        <fieldset>
+            <legend>Turno</legend>
+            <label for="fecha">Fecha del turno:</label>
+            <input type="date" id="fecha" name="fecha" required>
+        <br>
+        <br>
+            <label for="horario">Horario del turno:</label>
+            <select id="horario" required>
+                <option value="1">08:00am</option>
+                <option value="2">11:00am</option>
+                <option value="3">14:00pm</option>
+                <option value="4">17:00pm</option>
+            </select>
+        </fieldset>
+    </div>
+    <div id="form2">
+        <fieldset class="turno-servicios">
+            <legend>Servicios</legend>
+            <input type="checkbox" id="serv1" name="serv1" value="1">
+                <label for="serv1" >Manicuría básica</label><br>
+
+            <input type="checkbox" id="serv2" name="serv2" value="2">
+                <label for="serv2"> Manicuría con semipermanente</label><br>
+
+            <input type="checkbox" id="serv3" name="serv3" value="3">
+                <label for="serv3"> Esculpidas Gel/Poligel</label><br>
+
+            <input type="checkbox" id="serv4" name="serv4" value="4">
+                <label for="serv4"> Capping Gel/Poligel</label><br>
+
+            <input type="checkbox" id="serv5" name="serv5" value="5">
+                <label for="serv5"> Pedicuría básica</label><br>
+
+            <input type="checkbox" id="serv6" name="serv6" value="6">
+                <label for="serv6"> Pedicuría con semipermanente</label><br>
+
+            <input type="checkbox" id="serv7" name="serv7" value="7">
+                <label for="serv7"> Reparacion de uña</label><br>
+
+            <input type="checkbox" id="serv8" name="serv8" value="8">
+                <label for="serv8"> Perfilado</label><br>
+
+            <input type="checkbox" id="serv9" name="serv9" value="9">
+                <label for="serv9"> Perfilado con tinte</label><br>
+
+            <input type="checkbox" id="serv10" name="serv10" value="10">
+                <label for="serv10"> Lifting de pestañas</label><br>
+
+            <input type="checkbox" id="serv11" name="serv11" value="11">
+                <label for="serv11"> Lifting con tinte</label><br>
+        </fieldset>
+    </div>
+    <div id="form3">
+        <fieldset>
+            <legend>Estado de tus uñas</legend>
+            <input type="checkbox" id="estado1" name="estado1" value="1">
+                <label for="estado1"> Rota/s</label><br>
+            <input type="checkbox" id="estado2" name="estado2" value="2">
+                <label for="estado2"> Mordidas</label><br>
+            <input type="checkbox" id="estado3" name="estado3" value="3">
+                <label for="estado3"> Con esmaltado semipermanente</label><br>
+            <input type="checkbox" id="estado4" name="estado4" value="4">
+                <label for="estado4"> Esculpidas</label><br>
+            <input type="checkbox" id="estado5" name="estado5" value="5">
+                <label for="estado5"> Capping</label><br>  
+        </fieldset>
+        <fieldset>
+            <legend>Informacion adicional</legend>
+            <textarea name="infoadicional" rows="4" placeholder="Asisto con acompañante, hije o mascota, ingreso con bicicleta..."></textarea>
+        </fieldset>
+    </div>
+    </div>
+
+<div class="boton-turno">        
+    <input type="submit" value="Enviar">
+</div>
+    </form>
+</div>
+    <footer>
+        <div class="redes">
+            <p>Seguime en 
+                <a href="https://www.instagram.com/jazzhands_nailart/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/JazzHands-Nail-Art-423873975073445/"><i class="fab fa-facebook-f"></i></a>
+            </p>
+        </div>
+    </footer>
+    
+</body>
+</html>
