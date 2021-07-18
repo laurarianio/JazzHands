@@ -1,159 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link href="CSS/all.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
-    <link href="CSS/estilos.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script defer src="js/all.js"></script>
-    <title>FAQ</title>
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" alt="JazzHands Nailart" width="120" height="68"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="nails.html">Uñas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="browsandlashes.html">Cejas & Pestañas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="turnos.html">Turnos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="faq.html">Preguntas frecuentes</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>
-    </header>
+{% include 'header.html' %}
 
-    <div class="contenedor-faq">
-        <h1>Preguntas frecuentes</h1>
 
-        <dl>
-            <dt>¿Cómo reservo mi turno?</dt>
-            <dd>Podés reservar un turno para vos o solicitar un voucher para regalar el servicio a otra persona.
-                Trata de organizarte para reservarlo con tiempo para no quedarte sin tu turno. Se requiere una seña del 50% del servicio para la reserva (abonada con al menos 24hs de anticipación).               
-                Lo podes pedir haciendo click <a href="turnos.html">acá</a>.
-                Una vez completado el formulario te enviaremos los detalles de pago. 
-            </dd>
+<div class="contenedor-faq">
+    <h1>Preguntas frecuentes</h1>
 
-            <dt>¿Con cuánta anticipación debo reservar mi turno?</dt>
-            <dd>Se toman turnos con un mínimo de 2 días de anticipación. Pero para asegurar tu cupo lo ideal es solicitarlo de una semana para la siguiente. 
-            </dd>
+    <dl>
+        <dt>¿Cómo reservo mi turno?</dt>
+        <dd>Podés reservar un turno para vos o solicitar un voucher para regalar el servicio a otra persona. Trata de organizarte para reservarlo con tiempo para no quedarte sin tu turno. Se requiere una seña del 50% del servicio para la reserva (abonada
+            con al menos 24hs de anticipación). Lo podes pedir haciendo click <a href="turnos.html">acá</a>. Una vez completado el formulario te enviaremos los detalles de pago.
+        </dd>
 
-            <dt>¿Cuál es el horario de atención?</dt>
-            <dd>De lunes a viernes de 08am a 17pm*. Sábados de 10am a 16pm.
-                El último turno del día estará sujeto a las disposiciones gubernamentales de política sanitaria.
-                </dd>
+        <dt>¿Con cuánta anticipación debo reservar mi turno?</dt>
+        <dd>Se toman turnos con un mínimo de 2 días de anticipación. Pero para asegurar tu cupo lo ideal es solicitarlo de una semana para la siguiente.
+        </dd>
 
-            <dt>¿Cómo pagar?</dt>
-            <dd>Se aceptan tarjetas de débito y crédito a través de MercadoPago (a través de la app o con Posnet para tarjetas físicas).
-                Todos los precios tienen 10% de descuento abonando en efectivo, por transferencia bancaria o transferencia a través de la app de MercadoPago.
-                </dd>
+        <dt>¿Cuál es el horario de atención?</dt>
+        <dd>De lunes a viernes de 08am a 17pm*. Sábados de 10am a 16pm. El último turno del día estará sujeto a las disposiciones gubernamentales de política sanitaria.
+        </dd>
 
-            <dt>¿Cuánto cuesta cada servicio?</dt>
-            <dd>Podes ver todos los precios actualizados haciendo click en <a href="nails.html">Uñas</a> o <a href="browsandlashes.html">Pestañas</a>.
-            </dd>
+        <dt>¿Cómo pagar?</dt>
+        <dd>Se aceptan tarjetas de débito y crédito a través de MercadoPago (a través de la app o con Posnet para tarjetas físicas). Todos los precios tienen 10% de descuento abonando en efectivo, por transferencia bancaria o transferencia a través de la
+            app de MercadoPago.
+        </dd>
 
-            <dt>¿Cuánto demora cada servicio?</dt>
-            <dd>Podes ver todos los detalles de cada servicio haciendo click en <a href="nails.html">Uñas</a> o <a href="browsandlashes.html">Pestañas</a>.
-            </dd>
+        <dt>¿Cuánto cuesta cada servicio?</dt>
+        <dd>Podes ver todos los precios actualizados haciendo click en <a href="nails.html">Uñas</a> o <a href="browsandlashes.html">Pestañas</a>.
+        </dd>
 
-            <dt>¿Cada cuanto tiempo necesito renovar el servicio?
+        <dt>¿Cuánto demora cada servicio?</dt>
+        <dd>Podes ver todos los detalles de cada servicio haciendo click en <a href="nails.html">Uñas</a> o <a href="browsandlashes.html">Pestañas</a>.
+        </dd>
+
+        <dt>¿Cada cuanto tiempo necesito renovar el servicio?
             </dt>
-            <dd>Lo ideal es que prestes atención a si el servicio necesita mantenimiento y si es así te contactes para solicitar el turno con anticipación, para evitar el deterioro.
-                La duración varía en cada persona (según la velocidad de crecimiento de uñas o vello, rutinas y cuidado de la piel, propiedades químicas/ph que determinan la adherencia de los productos, etc). Todos los organismos son diferentes.
-                Tené en cuenta que el primer servicio de uñas suele tener menor duración, ya que estas vienen con daño acumulado por estar desprotegidas, mejorando con cada servicio.
-                Podés ver el detalle de la duración de cada servicio haciendo click en <a href="nails.html">Uñas</a> o <a href="browsandlashes.html">Pestañas</a>.
-                </dd>
+        <dd>Lo ideal es que prestes atención a si el servicio necesita mantenimiento y si es así te contactes para solicitar el turno con anticipación, para evitar el deterioro. La duración varía en cada persona (según la velocidad de crecimiento de uñas
+            o vello, rutinas y cuidado de la piel, propiedades químicas/ph que determinan la adherencia de los productos, etc). Todos los organismos son diferentes. Tené en cuenta que el primer servicio de uñas suele tener menor duración, ya que estas
+            vienen con daño acumulado por estar desprotegidas, mejorando con cada servicio. Podés ver el detalle de la duración de cada servicio haciendo click en <a href="nails.html">Uñas</a> o <a href="browsandlashes.html">Pestañas</a>.
+        </dd>
 
-            <dt>¿Puedo asistir con acompañante?
+        <dt>¿Puedo asistir con acompañante?
             </dt>
-            <dd>Si, sobretodo de tratarse de alguien menor de edad que requiere de acompañante o con una persona con infantes a su cargo. 
-                Pero se solicita asistir sin compañía de ser posible y si no respetar el máximo de un solo acompañante (dado el contexto sanitario actual).
-                </dd>
+        <dd>Si, sobretodo de tratarse de alguien menor de edad que requiere de acompañante o con una persona con infantes a su cargo. Pero se solicita asistir sin compañía de ser posible y si no respetar el máximo de un solo acompañante (dado el contexto
+            sanitario actual).
+        </dd>
 
-            <dt>¿Desde que edad puedo realizarme los servicios?
+        <dt>¿Desde que edad puedo realizarme los servicios?
             </dt>
-            <dd>No hay ninguna restricción, a excepción de personas alérgicas a algún compuesto de los productos a utilizar. Dado el caso puede realizarse una prueba de alergias antes de proceder con el servicio.
-                Se recomienda ser mayor de 10 años ya que los tratamientos son muy duraderos y los menores de edad tienden a cambiar sus gustos rápida y repentinamente. Esto puede derivar en que el menor se lastime intentando removerse el tratamiento de manera brusca (ej: morderse las uñas hasta quitar todo el esmaltado). 
-                Tener en cuenta que los servicios normalmente conllevan varias horas en una misma posición.
-                Estos son todos los aspectos que un mayor debería considerar para contratar el servicio para un menor.
-                </dd>
+        <dd>No hay ninguna restricción, a excepción de personas alérgicas a algún compuesto de los productos a utilizar. Dado el caso puede realizarse una prueba de alergias antes de proceder con el servicio. Se recomienda ser mayor de 10 años ya que los
+            tratamientos son muy duraderos y los menores de edad tienden a cambiar sus gustos rápida y repentinamente. Esto puede derivar en que el menor se lastime intentando removerse el tratamiento de manera brusca (ej: morderse las uñas hasta quitar
+            todo el esmaltado). Tener en cuenta que los servicios normalmente conllevan varias horas en una misma posición. Estos son todos los aspectos que un mayor debería considerar para contratar el servicio para un menor.
+        </dd>
 
-            <dt>¿Debo dejar descansar mis uñas?
+        <dt>¿Debo dejar descansar mis uñas?
             </dt>
-            <dd>Las uñas son células muertas endurecidas que consisten en proteína y queratina. Al igual que el pelo NO RESPIRAN. La única parte viva de las uñas es la matriz (raíz de las uñas debajo de la piel). Y su nutrición de las uñas se produce a través de los capilares utilizando aceite para la cutícula. Además también se pueden tomar las vitaminas adecuadas (siempre consultar con profesional en medicina dermatológica).
+        <dd>Las uñas son células muertas endurecidas que consisten en proteína y queratina. Al igual que el pelo NO RESPIRAN. La única parte viva de las uñas es la matriz (raíz de las uñas debajo de la piel). Y su nutrición de las uñas se produce a través
+            de los capilares utilizando aceite para la cutícula. Además también se pueden tomar las vitaminas adecuadas (siempre consultar con profesional en medicina dermatológica).
 
-            </dd>
+        </dd>
 
-            <dt>¿El esmaltado semipermanente debilita las uñas?
+        <dt>¿El esmaltado semipermanente debilita las uñas?
             </dt>
-            <dd>Todo lo contrario, al usar sistemáticamente esmaltado semipermanente, notarás que las uñas crecen más rápido. Debajo del material artificial, las uñas están protegidas de los factores químicos y mecánicos nocivos. 
-                Además contribuye a alinear uñas no muy rectas , fortalecer uñas frágiles y frenar la descamación de los bordes y quiebres.
-                </dd>
+        <dd>Todo lo contrario, al usar sistemáticamente esmaltado semipermanente, notarás que las uñas crecen más rápido. Debajo del material artificial, las uñas están protegidas de los factores químicos y mecánicos nocivos. Además contribuye a alinear uñas
+            no muy rectas , fortalecer uñas frágiles y frenar la descamación de los bordes y quiebres.
+        </dd>
 
-            <dt>¿Cómo hago para sacarme el esmaltado semipermanente?
+        <dt>¿Cómo hago para sacarme el esmaltado semipermanente?
             </dt>
-            <dd>La remoción está incluida en el costo del servicio siempre que se renueve el esmaltado. Sino tiene costo aparte. Podes reservar tu turno haciendo click <a href="turnos.html">acá</a>.</dd>
+        <dd>La remoción está incluida en el costo del servicio siempre que se renueve el esmaltado. Sino tiene costo aparte. Podes reservar tu turno haciendo click <a href="turnos.html">acá</a>.</dd>
 
-            <dt>¿Cómo retirar el esmaltado semipermanente con removedor?
+        <dt>¿Cómo retirar el esmaltado semipermanente con removedor?
             </dt>
-            <dd>1. Usando una lima bloque o la lima 100/180 quitar el brillo (la capa superior) del esmalte semipermanente.
-                2. Humedecer un trozo de algodón, 1/4 de disco de algodón o un paño sin pelusa (lint free wipe) con removedor.
-                3. Envolver cada uña con el algodón/paño humedecido con un trozo de papel aluminio o con los broches plásticos/de silicona que son específicamente para esto.
-                4. Después de 20 minutos o cuando esté blando, retirar los restos del esmalte semipermanente con una espátula u objeto firme que sirva de espátula (ej: repujador de cuticulas).
-                </dd>
+        <dd>1. Usando una lima bloque o la lima 100/180 quitar el brillo (la capa superior) del esmalte semipermanente. 2. Humedecer un trozo de algodón, 1/4 de disco de algodón o un paño sin pelusa (lint free wipe) con removedor. 3. Envolver cada uña con
+            el algodón/paño humedecido con un trozo de papel aluminio o con los broches plásticos/de silicona que son específicamente para esto. 4. Después de 20 minutos o cuando esté blando, retirar los restos del esmalte semipermanente con una espátula
+            u objeto firme que sirva de espátula (ej: repujador de cuticulas).
+        </dd>
 
-            <dt>¿Qué hago si se me quiebra una uña?
+        <dt>¿Qué hago si se me quiebra una uña?
             </dt>
-            <dd>Toda rotura puede repararse sin importar la gravedad. 
-Lo importante es que reserves tu turno haciendo click <a href="turnos.html">acá</a> lo antes posible y mientras tanto manejarse con cuidado, vendar el dedo o reforzar provisoriamente con adhesivo simil La Gotita.
-Puede emparchar o directamente reconstruirse, el costo es el mismo.
-</dd>
+        <dd>Toda rotura puede repararse sin importar la gravedad. Lo importante es que reserves tu turno haciendo click <a href="turnos.html">acá</a> lo antes posible y mientras tanto manejarse con cuidado, vendar el dedo o reforzar provisoriamente con adhesivo
+            simil La Gotita. Puede emparchar o directamente reconstruirse, el costo es el mismo.
+        </dd>
 
-            <dt>¿Para qué hacerme capping?
+        <dt>¿Para qué hacerme capping?
             </dt>
-            <dd>El capping es agregar una capa de material entre la uña y el esmalte fortaleciéndola aún más. Por lo tanto es la mejor opción para alinear, corregir uñas torcidas y fortalecer, ideal para quienes trabajan mucho con las manos o tienen uñas finas o débiles. 
-            </dd>
+        <dd>El capping es agregar una capa de material entre la uña y el esmalte fortaleciéndola aún más. Por lo tanto es la mejor opción para alinear, corregir uñas torcidas y fortalecer, ideal para quienes trabajan mucho con las manos o tienen uñas finas
+            o débiles.
+        </dd>
 
         <!--<dt>¿Qué diferencia hay entre el gel y el acrigel?</dt>
             <dd></dd>-->
 
-            <dt>¿Qué son las “gelificadas”?
+        <dt>¿Qué son las “gelificadas”?
             </dt>
-            <dd>Es una forma poco profesional de referirse a las uñas esculpidas con gel.
-            </dd>
+        <dd>Es una forma poco profesional de referirse a las uñas esculpidas con gel.
+        </dd>
 
-            <dt>¿Necesito hacerme esculpidas?
+        <dt>¿Necesito hacerme esculpidas?
             </dt>
-            <dd>Es ideal para conseguir uñas largas de forma inmediata o para un evento. Pero de poder esperar unos meses se consiguen los mismo resultados con sucesivos esmaltados semipermanentes. Además de llegar a tener uñas largas naturales y sanas, el semipermanente es un servicio más económico y rápido de realizar que las esculpidas.
-                Cuando se aplica correctamente, el esmaltado semipermanente dura de 2.5 a 4 semanas. Con el cuidado adecuado de las manos, se puede tener uñas prolijas y hermosas.
-                </dd>
+        <dd>Es ideal para conseguir uñas largas de forma inmediata o para un evento. Pero de poder esperar unos meses se consiguen los mismo resultados con sucesivos esmaltados semipermanentes. Además de llegar a tener uñas largas naturales y sanas, el semipermanente
+            es un servicio más económico y rápido de realizar que las esculpidas. Cuando se aplica correctamente, el esmaltado semipermanente dura de 2.5 a 4 semanas. Con el cuidado adecuado de las manos, se puede tener uñas prolijas y hermosas.
+        </dd>
 
-            <!--<dt>¿Puedo hacerme esculpidas si tengo las uñas mordidas?
+        <!--<dt>¿Puedo hacerme esculpidas si tengo las uñas mordidas?
             </dt>
             <dd></dd>
 
             <dt>Se me encarnan las uñas de los pies
             </dt>
             <dd></dd>
-            
+
             <dt>Mis cejas casi no se ven
             </dt>
             <dd></dd>
@@ -162,17 +117,7 @@ Puede emparchar o directamente reconstruirse, el costo es el mismo.
             </dt>
             <dd></dd>-->
 
-</dl>
+    </dl>
 </div>
 
-<footer>
-    <div class="redes">
-        <p>Seguime en 
-            <a href="https://www.instagram.com/jazzhands_nailart/"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/JazzHands-Nail-Art-423873975073445/"><i class="fab fa-facebook-f"></i></a>
-        </p>
-    </div>
-</footer>
-
-</body>
-</html>
+{% include 'footer.html' %}

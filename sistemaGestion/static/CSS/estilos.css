@@ -1,15 +1,16 @@
 /*Selector{
     propiedad: valor;
-    
+
 */
+
 body {
     background-color: #fde0dd;
-    color:#23234d;
+    color: #23234d;
     font-family: 'Quicksand', sans-serif;
 }
 
 .redes {
-    background-color:white;
+    background-color: white;
     padding: 1em 0;
 }
 
@@ -18,14 +19,15 @@ body {
     color: #23234d;
 }
 
-.redes p{
+.redes p {
     margin: 0;
     text-align: center;
 }
 
 h1 {
-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
 }
+
 
 /*
 .nav-item li:hover {
@@ -38,64 +40,73 @@ transition-timing-function: ease-in-out;
     margin: 5em auto;
     width: 100%;
 }
- .contenedor-turnos h1 {
-     margin-bottom: 1em;
-     text-align: center;
- }
 
- fieldset {
-     background-color: rgba(255, 255, 255, 0.56);
-     margin: 1em 0;
-     padding: 1em;
-     border-radius: 1em;
- }
-
- fieldset legend {
-     font-weight: bold;
- }
-
- fieldset textarea {
-     width: 100%;
-     border-radius: 0.5em;
- }
-
- .turno-servicios {
-    min-height: 300px;
- }
-
- .boton-turno {
-     text-align: center;
-     margin: 3em;
- }
-
- .boton-turno input {
-     border-radius: 0.5em;
- }
-
- .boton-turno input:hover {
-     font-weight: bolder; 
+.contenedor-turnos h1 {
+    margin-bottom: 1em;
+    text-align: center;
 }
 
-#form1, #form2, #form3 {
+fieldset {
+    background-color: rgba(255, 255, 255, 0.56);
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+fieldset legend {
+    font-weight: bold;
+}
+
+fieldset textarea {
+    width: 100%;
+    border-radius: 0.5em;
+}
+
+.turno-servicios {
+    min-height: 300px;
+}
+
+.boton-turno {
+    text-align: center;
+    margin: 3em;
+}
+
+.boton-turno input {
+    border-radius: 0.5em;
+}
+
+.boton-turno input:hover {
+    font-weight: bolder;
+}
+
+#form1,
+#form2,
+#form3 {
     margin: 2em;
 }
 
-
-
 @media screen and (min-width: 500px) {
-   #form1, #form2 {display: inline-block;}
-  }
+    #form1,
+    #form2 {
+        display: inline-block;
+    }
+}
 
 @media screen and (min-width: 1000px) {
-    #form3 {display: inline-block;}
-} 
-  
+    #form3 {
+        display: inline-block;
+    }
+}
+
 
 /* pag FAQ */
+
 .contenedor-faq {
-padding-bottom: 1em;
+    padding-bottom: 1em;
 }
-.contenedor-faq dl,dd {
+
+.contenedor-faq dl,
+dd {
     margin: 1em auto;
     max-width: 50em;
     background-color: rgba(255, 255, 255, 0.56);
@@ -109,8 +120,9 @@ padding-bottom: 1em;
 }
 
 dt {
-     text-align: center;
+    text-align: center;
 }
+
 
 /*pag nails*/
 
@@ -147,12 +159,12 @@ h1 {
 }
 
 .title h2 {
-    font-size:  1.3em;
+    font-size: 1.3em;
     font-weight: bold;
     text-align: center;
 }
 
-.servicio img{
+.servicio img {
     margin-bottom: 1em;
     border-style: solid;
     border-width: 0.6em;
@@ -175,14 +187,20 @@ h1 {
 .contenedor-home {
     margin: 5em auto;
     max-width: 45em;
-    }
-
-.contenedor-home h1, .contenedor-home h3 {
- margin-bottom: 1em;
- text-align: center;
 }
 
-.presentacion, .ubicacion, .ubicacion p, .hola, .video-home, .mapa-home {
+.contenedor-home h1,
+.contenedor-home h3 {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.presentacion,
+.ubicacion,
+.ubicacion p,
+.hola,
+.video-home,
+.mapa-home {
     background-color: rgba(255, 255, 255, 0.56);
     margin: 1em 0;
     padding: 1em;
@@ -193,11 +211,13 @@ h1 {
     font-size: 1.1em;
 }
 
-.presentacion, .ubicacion {
+.presentacion,
+.ubicacion {
     text-align: center;
 }
 
-.video-home, .mapa-home {
+.video-home,
+.mapa-home {
     width: 100%;
 }
 
@@ -209,18 +229,24 @@ h1 {
     font-family: 'Caveat', cursive;
     font-weight: bold;
     font-size: 1.5em;
-    color:tomato;
+    color: tomato;
     animation: logo-color 2s linear alternate infinite;
 }
 
 @keyframes logo-color {
-    from{color: #23234d;}
-    to{color: tomato;}
+    from {
+        color: #23234d;
+    }
+    to {
+        color: tomato;
+    }
 }
 
 p {
     text-align: left;
 }
+
+
 /*
 .jazz {
     transition: ;

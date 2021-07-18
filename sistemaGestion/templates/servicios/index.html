@@ -1,73 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link href="CSS/all.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    <link href="CSS/estilos.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script defer src="js/all.js"></script>
-    <title>Home</title>    
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container-fluid">
-              <a class="navbar-brand active" aria-current="page" href="index.html"><img src="img/logo.jpg" alt="JazzHands Nailart" width="120" height="68"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="nails.html">Uñas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="browsandlashes.html">Cejas & Pestañas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="turnos.html">Turnos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="faq.html">Preguntas frecuentes</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>
-    </header>
-
-    <main class="contenedor-home">
-        <h1 class="jazz"><span>Jazz</span>HaNds <span>Nailart</span></h1>
-        <section class="presentacion">
-            
-            <p class="hola">Servicios de belleza apuntados a realzar la belleza natural sacando a relucir todo tu potencial.
-                Manicuría especializada en cuidar la uña natural, sin limado excesivo. Mi meta siempre es que puedas lucir tus uñas perfectas y sobretodo sanas.
-                Belleza de pies con pedicuría básica.
-                Lifting y tinte de pestañas.
-                Diseño y perfilado, laminado y tinte de cejas.
-                </p>
-                <iframe class="video-home" src="https://www.youtube.com/embed/Zl5PE0hYDhU" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; encrypted-media;"></iframe>
-        </section>
-        <article class="ubicacion">
-            <h3>¿Dónde me encontrás?</h3>
-            <p>Atiendo en Boedo, en el limite con los barrios de Caballito y Almagro, Ciudad  Autónoma de Buenos Aires.</p>
-            <iframe class="mapa-home" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.2919871535464!2d-58.430012284769894!3d-34.622060880454725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca503dba30a9%3A0x907cbed1f0e1bc8e!2sAv.%20Independencia%20%26%20Av.%20La%20Plata%2C%20C1226%20CABA!5e0!3m2!1sen!2sar!4v1621648305492!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </article>
-    </main>
+{% include 'header.html' %}
 
 
-    <footer>
-        <div class="redes">
-            <p>Seguime en 
-                <a href="https://www.instagram.com/jazzhands_nailart/"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/JazzHands-Nail-Art-423873975073445/"><i class="fab fa-facebook-f"></i></a>
-            </p>
-        </div>
-    </footer>
-</body>
-</html>
+<main class="contenedor-home">
+    <h1 class="jazz"><span>Jazz</span>HaNds <span>Nailart</span></h1>
+    <section class="presentacion">
+
+        <p class="hola">Servicios de belleza apuntados a realzar la belleza natural sacando a relucir todo tu potencial. Manicuría especializada en cuidar la uña natural, sin limado excesivo. Mi meta siempre es que puedas lucir tus uñas perfectas y sobretodo sanas. Belleza
+            de pies con pedicuría básica. Lifting y tinte de pestañas. Diseño y perfilado, laminado y tinte de cejas.
+        </p>
+        <iframe class="video-home" src="https://www.youtube.com/embed/Zl5PE0hYDhU" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; encrypted-media;"></iframe>
+    </section>
+    <article class="ubicacion">
+        <h3>¿Dónde me encontrás?</h3>
+        <p>Atiendo en Boedo, en el limite con los barrios de Caballito y Almagro, Ciudad Autónoma de Buenos Aires.</p>
+        <iframe class="mapa-home" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.2919871535464!2d-58.430012284769894!3d-34.622060880454725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca503dba30a9%3A0x907cbed1f0e1bc8e!2sAv.%20Independencia%20%26%20Av.%20La%20Plata%2C%20C1226%20CABA!5e0!3m2!1sen!2sar!4v1621648305492!5m2!1sen!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </article>
+</main>
+
+{% include 'footer.html' %}
