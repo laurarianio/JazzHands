@@ -5,120 +5,20 @@
     <div class="nbl nbl-subtitle">
         <div>
             <div class="servicio">
+                {% for servicio in servicios_nails %}
                 <div class="title">
-                    <h2>Manicuría básica con opción de esmaltado común</h2>
+                    <h2 class="">{{servicio[2]}}</h2>
                 </div>
                 <img src="img/mani.png" width="300" height="300">
-                <div>Tiempo aproximado: 1 hora.</div>
-                <div>Duración aproximada: de 7 a 15 días.</div>
-                <div>Precio: $700</div>
+                <div>Tiempo aproximado: {{servicio[3]}}</div>
+                <div>Duración aproximada: {{servicio[4]}}</div>
+                <div>Precio: $ {{servicio[5]}}</div>
+                {% endfor %}
             </div>
         </div>
-
-        <div>
-            <div class="servicio">
-                <div class="title">
-                    <h2>Manicuría con esmaltado semipermanente</h2>
-                    <div>Incluye 2 decoraciones a elección en total.</div>
-                </div>
-                <img src="img/semi.jpg" width="300" height="300">
-                <div>Tiempo aproximado: 2 horas.</div>
-                <div>Duración aproximada: de 20 a 40 días.</div>
-                <div>Precio: $1000</div>
-            </div>
-        </div>
-
-        <div>
-            <div class="servicio">
-                <div class="title">
-                    <h2>Capping con gel o acrigel</h2>
-                    <div>Incluye 2 decoraciones a elección en total.</div>
-                </div>
-                <img src="img/capping.jpg" width="300" height="300">
-                <div>Tiempo aproximado: 3 horas.</div>
-                <div>Duración aproximada: de 20 a 40 días.</div>
-                <div>Precio: $1200</div>
-            </div>
-        </div>
-
-        <div>
-            <div class="servicio">
-                <div class="title">
-                    <h2>Esculpidas con gel o acrigel</h2>
-                    <div>Incluye 2 decoraciones a elección en total.</div>
-                </div>
-                <img src="img/esculpidas.jpg" width="300" height="300">
-                <div>Tiempo aproximado: 4 horas.</div>
-                <div>Duración: de 20 a 40 días.</div>
-                <div>Precio: $1650</div>
-            </div>
-        </div>
-
-        <div>
-            <div class="servicio">
-                <div class="title">
-                    <h2>Pedicuría básica con opción de esmaltado común</h2>
-                </div>
-                <img src="img/pedi.jpg" width="300" height="300">
-                <div>Tiempo aproximado: 2 horas.</div>
-                <div>Duración: de 15 a 30 días.</div>
-                <div>Precio: $1000</div>
-            </div>
-        </div>
-
-        <div>
-            <div class="servicio">
-                <div class="title">
-                    <h2>Pedicuría con esmaltado semipermanente</h2>
-                    <div>Incluye 2 decoraciones en total.</div>
-                </div>
-                <img src="img/pedi-semi.png" width="300" height="300">
-                <div>Tiempo aproximado: 2 horas.</div>
-                <div>Duración: de 1 a 2 meses.</div>
-                <div>Precio: $1200</div>
-            </div>
-        </div>
-
-        <div>
-            <div class="servicio">
-                <div class="title">
-                    <h2>Reparación/reconstrucción de uña rota natural o esculpida</h2>
-                </div>
-                <img src="img/reparacion.png" width="300" height="300">
-                <div>Tiempo aproximado: 30 min.</div>
-                <div>Duración aproximada: de 20 a 40 días.</div>
-                <div>Precio: $200 cada uña.</div>
-            </div>
-        </div>
-
-        <div>
-            <div class="servicio">
-                <div class="title">
-                    <h2>Decoración de uña extra</h2>
-                    <div>Glitter, piedras, dibujo, etc.</div>
-                </div>
-                <img src="img/deco.jpg" width="300" height="300">
-                <div>Tiempo aproximado: 30 min.</div>
-                <div>Duración aproximada: de 20 a 40 días.</div>
-                <div>Precio: $100 cada uña.</div>
-            </div>
-        </div>
-
-        <div>
-            <div class="servicio">
-                <div class="title">
-                    <h2>Remoción sin renovación del servicio</h2>
-                    <div>Incluye manicuría básica.</div>
-                </div>
-                <img src="img/remocion.jpg" width="300" height="300">
-                <div>Tiempo aproximado: 1 hora.</div>
-                <div>Semipermanente $400</div>
-                <div>Capping $500</div>
-                <div>Esculpidas $600</div>
-            </div>
-        </div>
-
     </div>
 </main>
+
+
 
 {% include 'footer.html' %}
