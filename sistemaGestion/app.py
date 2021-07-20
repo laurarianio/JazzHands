@@ -15,19 +15,34 @@ app.config['MYSQL_DATABASE_PASSWORD'] = ''
 app.config['MYSQL_DATABASE_Db'] = 'jazz'
 mysql.init_app(app)
 
-
 @app.route('/')
 def index():
-     #sql="INSERT INTO `sistema`.`empleados` (`nombre`, `correo`,`foto`) VALUES ('juan', 'juan@gmail.com','foto.jpg');"
-     #sql = "SELECT * FROM `sistema` . `empleados`;"
+     return render_template('servicios/index.html')
+
+
+@app.route('/nails')
+def services_nails():
+     sql = "SELECT * FROM `jazz` . `servicios` WHERE spa = 'uñas';"
      #sql = "INSERT INTO `jazz`.`servicios`(`id`, `spa`, `nombre`, `proceso`, `duracion`, `precio`, `foto`) VALUES ('4001','cejas','Perfilado + tinte de cejas','60 minutos','1 a 2 meses','850','img/cejas-tinte.png')"
      conn = mysql.connect()
      cursor = conn.cursor()
-     #cursor.execute(sql)
-     #empleados = cursor.fetchall()
+     cursor.execute(sql)
+     servicios_nails = cursor.fetchall()
      # print(empleados)
      conn.commit()
-     return render_template('servicios/index.html')
+     return render_template('servicios/nails.html', servicios_nails=servicios_nails)
+
+@app.route('/browsandlashes')
+def services_browsandlashes():
+     sql = "SELECT * FROM `jazz` . `servicios` WHERE spa = 'cejas' OR spa = 'pestañas';"
+     #sql = "INSERT INTO `jazz`.`servicios`(`id`, `spa`, `nombre`, `proceso`, `duracion`, `precio`, `foto`) VALUES ('4001','cejas','Perfilado + tinte de cejas','60 minutos','1 a 2 meses','850','img/cejas-tinte.png')"
+     conn = mysql.connect()
+     cursor = conn.cursor()
+     cursor.execute(sql)
+     servicios_browsandlashes = cursor.fetchall()
+     # print(empleados)
+     conn.commit()
+     return render_template('servicios/browsandlashes.html', servicios_browsandlashes=servicios_browsandlashes)
 
 @app.route('/login')
 def login():

@@ -2,58 +2,21 @@
 
 
 <main class="contenedor-nbl">
-    <h1>¡Elegí lo que quieras para tus uñas!</h1>
-
+    <h1>¡Elegí lo que quieras para tus cejas y pestañas!</h1>
     <div class="nbl">
-
         <div>
             <div class="servicio">
+                {% for servicio in servicios_browsandlashes %}
                 <div class="title">
-                    <h2 class="">Lifting de pestañas</h2>
+                    <h2 class="">{{servicio[2]}}</h2>
                 </div>
                 <img src="img/lifting.png" width="300" height="300">
-                <div>Tiempo aproximado: 30 min.</div>
-                <div>Duración aproximada: de 1 a 2 meses.</div>
-                <div>Precio: $900</div>
+                <div>Tiempo aproximado: {{servicio[3]}}</div>
+                <div>Duración aproximada: {{servicio[4]}}</div>
+                <div>Precio: $ {{servicio[5]}}</div>
+                {% endfor %}
             </div>
         </div>
-
-        <div>
-            <div class="servicio">
-                <div class="title">
-                    <h2>Lifting de pestañas + tinte</h2>
-                </div>
-                <img src="img/lifting+tinte.png" width="300" height="300">
-                <div>Tiempo aproximado: 1 hora.</div>
-                <div>Duración: de 1 a 2 meses.</div>
-                <div>Precio: $1000</div>
-            </div>
-        </div>
-
-        <div>
-            <div class="servicio">
-                <div class="title">
-                    <h2>Perfilado y diseño de cejas</h2>
-                </div>
-                <img src="img/cejas.png" width="300" height="300">
-                <div>Tiempo aproximado: 30 min.</div>
-                <div>Duración aproximada: de 1 a 2 meses.</div>
-                <div>Precio: $750</div>
-            </div>
-        </div>
-
-        <div>
-            <div class="servicio">
-                <div class="title">
-                    <h2>Perfilado + tinte de cejas</h2>
-                </div>
-                <img src="img/cejas-tinte.png" width="300" height="300">
-                <div>Tiempo aproximado: 1 hora.</div>
-                <div>Duración aproximada: de 1 a 2 meses.</div>
-                <div>Precio: $850</div>
-            </div>
-        </div>
-
     </div>
 </main>
 
