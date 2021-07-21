@@ -1,0 +1,53 @@
+{% include 'header.html' %}
+<b-card-header>
+    Ingresar nuevo servicio
+</b-card-header>
+
+    <form method="post" action="/store" enctype="multipart/form-data">
+        <br>
+        <div class="form-group">
+            <label for="txtId">Codigo:</label>
+             <input id="txtId" class="formcontrol" type="number" name="txtId">
+        </div>  
+        <br>
+        <div class="form-group">
+            <label for="txtSpa">Spa:</label>
+            <input id="txtSpa" class="formcontrol" type="text" name="txtSpa">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="txtNombre">Nombre:</label>
+             <input id="txtNombre" class="formcontrol" type="text" name="txtNombre">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="txtProceso">Proceso:</label>
+             <input id="txtProceso" class="formcontrol" type="text" name="txtProceso">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="txtDuracion">Duración:</label>
+             <input id="txtDuracion" class="formcontrol" type="text" name="txtDuracion">
+        </div>
+
+        <br>
+        <div class="form-group">
+            <label for="txtPrecio">Precio:</label>
+             <input id="txtPrecio" class="formcontrol" type="number" name="txtPrecio">
+        </div> 
+        <br>
+        <div class="form-group">
+            <label for="txtFoto">Foto:</label>
+            <input id="txtFoto" class="formcontrol" type="file" name="txtFoto">
+        </div>
+
+        <div class="form-group">
+            <input type="submit" class="servicioBoton btn-light btn-sm" value="Agregar">
+            <a href="{{url_for('index')}}" class="btn btnprimary">Regresar</a>
+        </div>
+        <br>
+        <br>
+        <input type="submit" value="Agregar"
+
+
+{% include 'footer.html' %}

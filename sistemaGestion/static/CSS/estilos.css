@@ -152,6 +152,17 @@ h1 {
     border-radius: 1em;
 }
 
+.servicioBoton {
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color:black;
+    background-color: rgba(255, 255, 255, 0.56);
+    border-radius: 5px;
+
+}
+
 .title {
     max-width: 300px;
     margin-bottom: 1em;
