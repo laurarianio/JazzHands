@@ -44,6 +44,16 @@ def services_browsandlashes():
      conn.commit()
      return render_template('servicios/browsandlashes.html', servicios_browsandlashes=servicios_browsandlashes)
 
+@app.route('/turnos')
+def turnos():
+     '''Muestra el formulario de turnos'''
+     return render_template('servicios/turnos.html')
+
+@app.route('/faq')
+def faq():
+     '''Muestra la seccion de preguntas frecuentes'''
+     return render_template('servicios/faq.html')
+
 
 @app.route('/gestion', methods=['POST'])
 def gestion():
